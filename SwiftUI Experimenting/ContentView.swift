@@ -11,9 +11,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        NavigationView {
+        
         VStack {
             MapView()
-                .edgesIgnoringSafeArea(.top)
+                
                 .frame(height: 300)
             
             CircleImage()
@@ -39,7 +41,9 @@ struct ContentView: View {
             
         Spacer()
         }
+        .navigationBarTitle(Text("Turtle Rock"))
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
